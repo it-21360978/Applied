@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="success_card_layout_width">433dp</dimen>
+    <dimen name="success_layout_height">268dp</dimen>
+    <dimen name="success_image_margin_top">32dp</dimen>
+    <dimen name="success_job_name_margin_top">24dp</dimen>
+    <dimen name="success_job_name_txt_size">34sp</dimen>
+    <dimen name="success_msg_txt">16dp</dimen>
+    <dimen name="success_msg_txt_size">16sp</dimen>
+    <dimen name="success_page_btn_size">20sp</dimen>
+    <dimen name="job_form_title_size">24sp</dimen>
+    <dimen name="job_form_sub_texts">20sp</dimen>
+    <dimen name="job_form_btn_txt_size">20sp</dimen>
+    <dimen name="job_form_margin_top">24dp</dimen>
+    <dimen name="job_form_Btn_margin_end">32dp</dimen>
+    <dimen name="Category_NAme">20sp</dimen>
+    <dimen name="job_list_title_size">20sp</dimen>
+    <dimen name="jobList_cmpny_txt_size">16sp</dimen>
+    <dimen name="recent_job_view_dsc_txt_size">16sp</dimen>
+    <dimen name="Selected_job_title_size">24sp</dimen>
+    <dimen name="selected_job_req_and_desc">20sp</dimen>
+    <dimen name="selected_job_sub_ttle_size">20sp</dimen>
+    <dimen name="view_txt_size">16sp</dimen>
+</resources>

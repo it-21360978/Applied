@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">job_portal</string>
+    <string name="layout">activity_listing.xml</string>
+    <string name="Job_seeker_name">jone doe</string>
+    <string name="job_seeker_location">Colombo,Sri lanka</string>
+    <string name="Job_seeker_about">About me</string>
+    <string name="Job_seeker_desc">description</string>
+    <string name="job_seeker_edit">Edit Profile</string>
+    <string name="job_seeker_delete">Sign Out</string>
+    <string name="Job_List">Graphic Designer</string>
+    <string name="Job_list">View</string>
+    <string name="job_list_company">Company</string>
+    <string name="Job_list_location">Location</string>
+    <string name="Job_list_duration">1 day ago</string>
+    <string name="Job_list_desc">Job Description</string>
+    <string name="Job_desc">Description</string>
+    <string name="Job_requirement">Entry Requirements</string>
+    <string name="Job_req">Requirement here</string>
+    <string name="Job_apply_btn">APPLY NOW</string>
+    <string name="apply_cv">Upload CV</string>
+    <string name="Application_edit">Edit Your Details</string>
+    <string name="application_delete">DELETE THE APPLICATION</string>
+    <string name="job_category_name">You selected IT category :</string>
+    <string name="job_applicants_count">100 applicants</string>
+    <string name="Job_sub_title">"Internships "</string>
+    <string name="form_name">Full Name</string>
+    <string name="form_email">E-Mail</string>
+    <string name="Gender2">Female</string>
+    <string name="Gender1">Male</string>
+    <string name="form_address">Address here</string>
+    <string name="form_mobile">"Mobile "</string>
+    <string name="form_cv">Upload Here CV</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="success_msg">Congratulations,Your application has been sent</string>
+    <string name="another_btn">Find Another JOB</string>
+</resources>

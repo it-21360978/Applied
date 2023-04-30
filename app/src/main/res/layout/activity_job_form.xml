@@ -49,8 +49,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/dot1"
@@ -117,31 +119,46 @@
 
     <EditText
         android:id="@+id/fllnme"
-        android:layout_width="367dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/background_box"
         android:ems="10"
+        android:hint="@string/form_name"
         android:inputType="textPersonName"
-        android:text="@string/form_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobName" />
+
+    <EditText
+        android:id="@+id/jobName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_box"
+        android:hint="Retype the job Name"
+        android:textColor="#101010"
+        app:layout_constraintBottom_toTopOf="@+id/fllnme"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBox2" />
 
     <EditText
         android:id="@+id/emailtxt"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/background_box"
         android:ems="10"
+        android:hint="@string/form_email"
         android:inputType="textEmailAddress"
-        android:text="@string/form_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,28 +191,28 @@
 
     <EditText
         android:id="@+id/addresstxt"
-        android:layout_width="379dp"
-        android:layout_height="82dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/background_box"
-        android:text="@string/form_address"
+        android:hint="@string/form_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
 
     <EditText
         android:id="@+id/mbiletxt"
-        android:layout_width="386dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/background_box"
         android:ems="10"
+        android:hint="@string/form_mobile"
         android:inputType="phone"
-        android:text="@string/form_mobile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addresstxt" />
@@ -218,11 +235,11 @@
 
     <Button
         android:id="@+id/submitbtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="@dimen/job_form_margin_top"
-        android:layout_marginEnd="@dimen/job_form_Btn_margin_end"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_box"
         android:text="@string/submit_btn"

@@ -67,6 +67,7 @@ class JobForm_Activity : AppCompatActivity() {
 
 
         binding.submitbtn.setOnClickListener {
+            val jobName= binding.jobName.text.toString()
             val sFullName = binding.fllnme.text.toString()
             val sEmail = binding.emailtxt.text.toString()
             val sGender = binding.checkBox1.isChecked
@@ -89,7 +90,9 @@ class JobForm_Activity : AppCompatActivity() {
                                 sGender2,
                                 sAddress,
                                 sMobile,
-                                downloadUri.toString()
+                                jobName,
+                                downloadUri.toString(),
+
                             )
 
                             val jobFormRef = databaseRef.child("jobForms").push()
@@ -108,6 +111,7 @@ class JobForm_Activity : AppCompatActivity() {
                                 binding.checkBox2.isChecked = false
                                 binding.addresstxt.setText("")
                                 binding.mbiletxt.setText("")
+                                binding.jobName.setText("")
                                 fileUri = null
 
                             }.addOnFailureListener {
@@ -122,7 +126,7 @@ class JobForm_Activity : AppCompatActivity() {
                     }
                 } else {
                     // If no CV file has been chosen, create a Job object without the download URL
-                    val Jobs = Job(sFullName, sEmail, sGender, sGender2, sAddress, sMobile)
+                    val Jobs = Job(sFullName, sEmail, sGender, sGender2, sAddress, sMobile,jobName)
 
                     val jobFormRef = databaseRef.child("jobForms").push()
                     jobFormRef.setValue(Jobs).addOnSuccessListener {
@@ -136,6 +140,7 @@ class JobForm_Activity : AppCompatActivity() {
                         binding.checkBox2.isChecked = false
                         binding.addresstxt.setText("")
                         binding.mbiletxt.setText("")
+                        binding.jobName.setText("")
                         fileUri = null
 
                         val intent = Intent(this,card_view::class.java)

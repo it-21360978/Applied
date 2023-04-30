@@ -7,5 +7,7 @@ data class Job(
     val sGender2: Boolean,
     val sAddress: String = "",
     val sMobile: String = "",
-    val cvUrl: String = ""
+    val jobName:String="",
+    val cvUrl: String = "",
+
 )

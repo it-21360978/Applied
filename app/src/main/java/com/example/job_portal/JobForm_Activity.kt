@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 
 import com.example.job_portal.databinding.ActivityJobFormBinding
@@ -42,6 +43,25 @@ class JobForm_Activity : AppCompatActivity() {
             intent.type = "application/pdf" // Set the MIME type of PDF files
             startActivityForResult(intent, 1)
         }
+
+        // Get the job data from the intent(company adapter eken data gannawa )
+        val companyName = intent.getStringExtra("company_name")
+        val location = intent.getStringExtra("location")
+        val description = intent.getStringExtra("description")
+        val age = intent.getStringExtra("age")
+
+
+        // Update the UI with the job details(company adapter eken pass karana data xml eke view karanwa)
+        val companyTextView = findViewById<TextView>(R.id.jobname)
+        val locationTextView = findViewById<TextView>(R.id.jobCmpny)
+        val ageTextView = findViewById<TextView>(R.id.joblocation)
+        val descriptionTextView = findViewById<TextView>(R.id.timejob)
+
+
+        companyTextView.text = companyName
+        locationTextView.text = location
+        descriptionTextView.text = description
+        ageTextView.text=age
 
 
 
@@ -117,6 +137,11 @@ class JobForm_Activity : AppCompatActivity() {
                         binding.addresstxt.setText("")
                         binding.mbiletxt.setText("")
                         fileUri = null
+
+                        val intent = Intent(this,card_view::class.java)
+                        // Start the new activity
+                        startActivity(intent)
+
                     }
                 }
             }

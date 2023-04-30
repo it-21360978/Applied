@@ -223,6 +223,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="@dimen/job_form_margin_top"
         android:layout_marginEnd="@dimen/job_form_Btn_margin_end"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/btn_box"
         android:text="@string/submit_btn"
         android:textSize="@dimen/job_form_btn_txt_size"

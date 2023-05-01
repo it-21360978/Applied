@@ -63,29 +63,29 @@
         app:layout_constraintTop_toBottomOf="@+id/btnRejob"
         app:layout_constraintVertical_bias="1.0">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/home" />
 
-        <ImageView
-            android:id="@+id/imageView4"
+        <ImageButton
+            android:id="@+id/catogery"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/category" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/inquiry" />
 
-        <ImageView
-            android:id="@+id/imageView8"
+        <ImageButton
+            android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_weight="1"

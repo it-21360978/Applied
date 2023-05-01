@@ -25,12 +25,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".jobediteDelete"
+            android:name=".ReadData"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".recentapplied"
             android:exported="true">
@@ -59,6 +60,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity
+            android:name=".jobeditDelete"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

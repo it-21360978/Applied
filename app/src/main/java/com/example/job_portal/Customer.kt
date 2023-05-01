@@ -1,3 +1,14 @@
 package com.example.job_portal
 
-data class Customer(var sfullName:String?=null, var semail:String?=null,var saddress:String?=null)
+import java.io.Serializable
+
+data class Customer(
+    var sfullName: String? = null,
+    val semail: String? = null,
+    val saddress: String? = null,
+    val smobile: String? = null,
+    val jobName: String? = null,
+    val cvUrl: String? = null
+) : Serializable {
+    constructor() : this("", "", "", "", "", "")
+}

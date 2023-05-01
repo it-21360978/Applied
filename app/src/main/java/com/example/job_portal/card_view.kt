@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class card_view : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +18,18 @@ class card_view : AppCompatActivity() {
         applyButton.setOnClickListener {
             // Create an intent to start the ApplyActivity
             val intent = Intent(this,JobView_Activity::class.java)
+            startActivity(intent)
+        }
+        val imageButton = findViewById<ImageButton>(R.id.profile)
+
+        imageButton.setOnClickListener {
+            val intent = Intent(this,Seeker_profile::class.java)
+            startActivity(intent)
+        }
+
+        val category = findViewById<ImageButton>(R.id.catogery)
+        category.setOnClickListener {
+            val intent = Intent(this, JobView_Activity::class.java)
             startActivity(intent)
         }
     }

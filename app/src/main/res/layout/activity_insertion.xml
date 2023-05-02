@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_view"
+    tools:context=".InquiryMainActivity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="@dimen/cornerRadius1"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext"
+       >
+
+        <LinearLayout
+            android:layout_width="@dimen/layout"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_box"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/name"
+                android:padding="@dimen/EditTextPadding"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_light_background"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/mail"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/Msg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_message_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/msg"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textColorHint="@color/black" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#77E16E"
+                android:text="@string/submitbtn"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="165dp">
+
+        <LinearLayout
+
+            android:layout_width="393dp"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/box" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/chat" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:srcCompat="@drawable/pp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

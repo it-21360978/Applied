@@ -15,4 +15,9 @@
     <color  name="lightdark_applybtn">#31EF39</color>
     <color  name="lavender_purple">#7551FF</color>
 
+
+    <color name="lavender">#8692f7</color>
+    <color name="purple">#8692f7</color>
+    <color name="bg">#B9A1E6</color>
+
 </resources>

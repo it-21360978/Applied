@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="253dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Interview Skills"
+            android:textColor="#fff"
+            android:textSize="33dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="177dp"
+        android:layout_height="241dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="48dp"
+
+
+        android:src="@drawable/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read More"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="9dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dot_icon" />
+
+        <Button
+            android:id="@+id/btnGetstart1"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/purple_700"
+            android:letterSpacing="0.04"
+            android:text="Read More"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

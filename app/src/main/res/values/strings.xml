@@ -35,6 +35,44 @@
     <string name="another_btn">Find Another JOB</string>
 
 
+
+    <string name="company">Companies</string>
+    <string name="feedback" />
+    <string name="feedbacks">Feedbacks</string>
+    <string name="Inquiries">Inquiries</string>
+    <string name="Profile">Profile</string>
+    <string name="preview">Preview</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="pre">xxxxxxxxxxxxxxxxxxx</string>
+    <string name="hint2">xxxxxxxxxxxxxxxx</string>
+    <string name="hint3">xxxxxxxxxxxxx</string>
+    <string name="freelance1">What is Freelancing?</string>
+    <string name="para1">Being freelance, or self-employed, means that rather than signing a contract to work for one company, you work for yourself and manage your own tax affairs. This gives you the freedom to work for whoever you like, as much or as little as you want. You\'re flexible and the ruler of your own destiny.</string>
+    <string name="next1">next</string>
+    <string name="freeelance2">How to become a Freelancer?</string>
+    <string name="para2">To become a freelancer, first identify your skills and create a portfolio showcasing your abilities. Determine your rates and find clients through platforms like Upwork or social media. Build a reputation by delivering high-quality work and providing excellent customer service. Keep learning and growing your skills to stay competitive in the freelance market.</string>
+    <string name="Freelancing">Freelancing</string>
+    <string name="more">Read More</string>
+    <string name="ReadMore">Read More</string>
+    <string name="add">Add Inquiries</string>
+    <string name="name">Username</string>
+    <string name="mail">Type email</string>
+    <string name="msg">Type Message Here</string>
+    <string name="submitbtn">Submit</string>
+    <string name="interview">Improving your interview skills can make a big difference in landing a job. To prepare for an interview, start by researching the company and its mission. This will help you to answer questions about why you want to work there and what you can contribute to the company. Practice common interview questions out loud to build your confidence and improve your responses. It\'s also important to dress professionally, arrive early, and make a good first impression. During the interview, listen carefully to the questions and take your time when answering. Finally, remember to thank the interviewer for their time and follow up with a thank you note or email.</string>
+    <string name="job">"Job search "</string>
+    <string name="free">Freelancing</string>
+    <string name="skills">Skill development</string>
+    <string name="feedbackAdd">Feedbacks</string>
+    <string name="addinq">Inquiries</string>
+    <string name="user">Profile</string>
+    <string name="nameN">Name</string>
+    <string name="hintd1">Employee Name</string>
+    <string name="hintd2">Employee Age</string>
+    <string name="hintd3">Employee Salary</string>
+    <string name="dEdt">Edit</string>
+
     <string name="companyname">Company Name</string>
     <string name="jobs">Create a Job</string>
     <string name="title">Job title</string>

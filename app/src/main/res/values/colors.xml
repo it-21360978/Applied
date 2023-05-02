@@ -15,6 +15,13 @@
     <color  name="lightdark_applybtn">#31EF39</color>
     <color  name="lavender_purple">#7551FF</color>
 
+
+
+    <color name="lavender">#8692f7</color>
+    <color name="purple">#8692f7</color>
+    <color name="bg">#B9A1E6</color>
+
+
     <color name="purple">#6200ee</color>
     <color name="blue">  #1e4368</color>
     <color name="light_green">#B5FEAF</color>
@@ -23,4 +30,5 @@
     <color name="material_dynamic_NEUTRAL95">#F0F0F3</color>
     <color name="material_dynamic_neutral80">#8F9193</color>
     <color name="design_default_color_on_primary">#FFFFFF</color>
+
 </resources>

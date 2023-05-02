@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="APPLIED"
+            android:textColor="#fff"
+            android:textSize="33dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="152dp"
+        android:layout_height="186dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="48dp"
+
+
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_width1"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dot_icon" />
+
+        <Button
+            android:id="@+id/btnGetstart"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/purple_700"
+            android:letterSpacing="0.04"
+            android:text="Get started"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

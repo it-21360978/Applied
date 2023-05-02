@@ -14,6 +14,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
+
+
+        <activity
+            android:name=".interview_1"
+            android:exported="false" />
+
+        <activity
+            android:name=".skill_1"
+            android:exported="false" />
+        <activity
+            android:name=".SkillDevelopment"
+            android:exported="false" />
+
+        <activity
+            android:name=".free_page2"
+            android:exported="false" />
+        <activity
+            android:name=".free_page1"
+            android:exported="false" />
+        <activity
+            android:name=".Freelance"
+            android:exported="false" />
+        <activity
+            android:name=".InquiryDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Fetching_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_insertion"
+            android:exported="false" />
+
+
         <activity
             android:name=".job_add"
             android:exported="true" />
@@ -73,6 +106,13 @@
         </activity>
 
         <activity
+            android:name=".InquiryMainActivity"
+            android:exported="true">
+
+        </activity>
+
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <meta-data
@@ -85,6 +125,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+
+
+
         <activity
             android:name=".JobView_Activity"
             android:exported="true">
@@ -98,6 +144,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+
+
+
+
     </application>
 
 </manifest>

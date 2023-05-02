@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_view"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etEmpName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_box"
+        android:hint="@string/hintd1"
+        android:inputType="textPersonName"
+        android:textColor="#0E0D0D"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etEmpAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_box"
+        android:ems="10"
+        android:hint="@string/hintd2"
+        android:textColor="#040303"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etEmpSalary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_box"
+        android:ems="10"
+        android:hint="@string/hintd3"
+        android:inputType="textPersonName"
+        android:textColor="#070606"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="177dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#7131E3"
+        android:text="@string/dEdt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+
+</LinearLayout>

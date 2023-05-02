@@ -21,4 +21,23 @@
     <dimen name="selected_job_req_and_desc">20sp</dimen>
     <dimen name="selected_job_sub_ttle_size">20sp</dimen>
     <dimen name="view_txt_size">16sp</dimen>
+
+
+    <dimen name="height">200dp</dimen>
+    <dimen name="marginleft">24dp</dimen>
+    <dimen name="marginRight">25dp</dimen>
+    <dimen name="layout_width">150dp</dimen>
+    <dimen name="margin_left">100dp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="cornerRadius">20dp</dimen>
+    <dimen name="margin_top">40dp</dimen>
+    <dimen name="marginStart">130dp</dimen>
+    <dimen name="layout_height">9dp</dimen>
+    <dimen name="layout_width1">60dp</dimen>
+    <dimen name="text">18sp</dimen>
+    <dimen name="cardElevation">12dp</dimen>
+    <dimen name="cornerRadius1">30dp</dimen>
+    <dimen name="layout">351dp</dimen>
+    <dimen name="padding">24dp</dimen>
+    <dimen name="EditTextPadding">8dp</dimen>
 </resources>

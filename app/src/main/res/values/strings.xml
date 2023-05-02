@@ -33,4 +33,18 @@
     <string name="submit_btn">SUBMIT</string>
     <string name="success_msg">Congratulations,Your application has been sent</string>
     <string name="another_btn">Find Another JOB</string>
+
+
+    <string name="companyname">Company Name</string>
+    <string name="jobs">Create a Job</string>
+    <string name="title">Job title</string>
+    <string name="cateogory">Job Category</string>
+    <string name="type">Job Type</string>
+    <string name="salary">Salary Range</string>
+    <string name="description">Job Description</string>
+    <string name="postbutton">Post</string>
+    <string name="recieve_jobs">IT JOBS</string>
+    <string name="search">search for...</string>
+    <string name="job1">job1</string>
+
 </resources>

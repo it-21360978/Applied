@@ -1,16 +1,12 @@
-package com.example.job_portal
-
-
-
 data class Job(
-    val sFullName: String = "",
-    val sEmail: String = "",
-    val sGender: Boolean = false,
-    val sGender2: Boolean = false,
-    val sAddress: String = "",
-    val sMobile: String = "",
-    val jobName:String = "",
-    val cvUrl: String = ""
+    var fullName: String = "",
+    var email: String = "",
+    val gender: Boolean = false,
+    val gender2: Boolean = false,
+    var address: String = "",
+    var mobile: String = "",
+    var jobName:String = "",
+    var cvUrl: String = ""
 ) {
     constructor() : this("", "", false, false, "", "", "", "")
 }

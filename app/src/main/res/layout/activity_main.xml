@@ -45,19 +45,22 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="434dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintBottom_toBottomOf="@+id/topBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/dot1"
-            android:layout_width="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="228dp"
-            android:layout_weight="1"
             app:srcCompat="@drawable/dot" />
 
         <TextView
@@ -73,11 +76,10 @@
 
         <ImageView
             android:id="@+id/dot2"
-            android:layout_width="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="228dp"
-            android:layout_weight="1"
             app:srcCompat="@drawable/dot" />
 
         <TextView
@@ -93,16 +95,15 @@
 
         <ImageView
             android:id="@+id/dot3"
-            android:layout_width="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="228dp"
-            android:layout_weight="1"
             app:srcCompat="@drawable/dot" />
 
         <TextView
             android:id="@+id/timejob"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="220dp"
@@ -176,13 +177,13 @@
         android:id="@+id/applybtn"
         android:layout_width="215dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/btn_box"
         android:text="@string/Job_apply_btn"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

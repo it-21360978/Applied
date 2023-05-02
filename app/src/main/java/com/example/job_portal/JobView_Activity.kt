@@ -8,6 +8,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -39,7 +40,8 @@ class JobView_Activity : AppCompatActivity() {
     }
 }
 */
-    private var dbref = FirebaseDatabase.getInstance().getReference("jobForms")
+
+    private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
     private lateinit var jobArrayList: ArrayList<company>
 
@@ -78,6 +80,16 @@ class JobView_Activity : AppCompatActivity() {
             }
 
         })
+
+        //navbar
+        val imageButton = findViewById<ImageButton>(R.id.vProfile)
+
+        imageButton.setOnClickListener {
+            val intent = Intent(this,Seeker_profile::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
 

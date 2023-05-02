@@ -50,7 +50,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="562dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvJob"
@@ -62,5 +62,44 @@
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/vhome"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/vCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/category" />
+
+        <ImageButton
+            android:id="@+id/vInqury"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/inquiry" />
+
+        <ImageButton
+            android:id="@+id/vProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profilenav" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

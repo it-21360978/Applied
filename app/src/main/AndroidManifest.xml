@@ -48,6 +48,9 @@
 
 
         <activity
+            android:name=".job_add"
+            android:exported="true" />
+        <activity
             android:name=".job_list"
             android:exported="false" />
         <activity

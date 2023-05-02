@@ -1,6 +1,7 @@
 package com.example.job_portal
 
 
+import Job
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -46,36 +47,38 @@ class JobForm_Activity : AppCompatActivity() {
 
         // Get the job data from the intent(company adapter eken data gannawa )
         val companyName = intent.getStringExtra("company_name")
-        val location = intent.getStringExtra("location")
-        val description = intent.getStringExtra("description")
-        val age = intent.getStringExtra("age")
+        val location = intent.getStringExtra("category")
+        val description = intent.getStringExtra("title")
+        val age = intent.getStringExtra("type")
+     /*   val time = intent.getStringExtra("title")
+        val requirements = intent.getStringExtra("description")*/
 
 
         // Update the UI with the job details(company adapter eken pass karana data xml eke view karanwa)
         val companyTextView = findViewById<TextView>(R.id.jobname)
         val locationTextView = findViewById<TextView>(R.id.jobCmpny)
-        val ageTextView = findViewById<TextView>(R.id.joblocation)
+        val typeTextView = findViewById<TextView>(R.id.joblocation)
         val descriptionTextView = findViewById<TextView>(R.id.timejob)
 
 
         companyTextView.text = companyName
         locationTextView.text = location
         descriptionTextView.text = description
-        ageTextView.text=age
+        typeTextView.text=age
 
 
 
 
         binding.submitbtn.setOnClickListener {
             val jobName= binding.jobName.text.toString()
-            val sFullName = binding.fllnme.text.toString()
-            val sEmail = binding.emailtxt.text.toString()
-            val sGender = binding.checkBox1.isChecked
-            val sGender2 = binding.checkBox2.isChecked
-            val sAddress = binding.addresstxt.text.toString()
-            val sMobile = binding.mbiletxt.text.toString()
+            val fullName = binding.fllnme.text.toString()
+            val email = binding.emailtxt.text.toString()
+            val gender = binding.checkBox1.isChecked
+            val gender2 = binding.checkBox2.isChecked
+            val address = binding.addresstxt.text.toString()
+            val mobile = binding.mbiletxt.text.toString()
 
-            if (sFullName.isNotEmpty() && sEmail.isNotEmpty() && (sGender || sGender2) && sAddress.isNotEmpty() && sMobile.isNotEmpty()) {
+            if (fullName.isNotEmpty() && email.isNotEmpty() && (gender || gender2) && address.isNotEmpty() && mobile.isNotEmpty()) {
 
                 // Upload the CV file if it has been chosen
                 if (fileUri != null) {
@@ -84,12 +87,12 @@ class JobForm_Activity : AppCompatActivity() {
                     uploadTask.addOnSuccessListener {
                         fileRef.downloadUrl.addOnSuccessListener { downloadUri ->
                             val Jobs = Job(
-                                sFullName,
-                                sEmail,
-                                sGender,
-                                sGender2,
-                                sAddress,
-                                sMobile,
+                                fullName,
+                                email,
+                                gender,
+                                gender2,
+                                address,
+                                mobile,
                                 jobName,
                                 downloadUri.toString(),
 
@@ -126,7 +129,7 @@ class JobForm_Activity : AppCompatActivity() {
                     }
                 } else {
                     // If no CV file has been chosen, create a Job object without the download URL
-                    val Jobs = Job(sFullName, sEmail, sGender, sGender2, sAddress, sMobile,jobName)
+                    val Jobs = Job(fullName,email,gender, gender2, address, mobile, jobName)
 
                     val jobFormRef = databaseRef.child("jobForms").push()
                     jobFormRef.setValue(Jobs).addOnSuccessListener {

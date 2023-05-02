@@ -73,4 +73,16 @@
     <string name="hintd3">Employee Salary</string>
     <string name="dEdt">Edit</string>
 
+    <string name="companyname">Company Name</string>
+    <string name="jobs">Create a Job</string>
+    <string name="title">Job title</string>
+    <string name="cateogory">Job Category</string>
+    <string name="type">Job Type</string>
+    <string name="salary">Salary Range</string>
+    <string name="description">Job Description</string>
+    <string name="postbutton">Post</string>
+    <string name="recieve_jobs">IT JOBS</string>
+    <string name="search">search for...</string>
+    <string name="job1">job1</string>
+
 </resources>

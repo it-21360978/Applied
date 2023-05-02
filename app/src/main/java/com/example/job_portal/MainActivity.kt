@@ -16,10 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         // Get the job data from the intent(company adapter eken data gannawa )
         val companyName = intent.getStringExtra("company_name")
-        val location = intent.getStringExtra("location")
+        val location = intent.getStringExtra("category")
         val description = intent.getStringExtra("description")
-        val age = intent.getStringExtra("age")
-        val time = intent.getStringExtra("time")
+        val age = intent.getStringExtra("type")
+        val time = intent.getStringExtra("title")
         val requirements = intent.getStringExtra("description")
 
         // Update the UI with the job details(company adapter eken pass karana data xml eke view karanwa)
@@ -47,9 +47,9 @@ class MainActivity : AppCompatActivity() {
 
             // Pass the job data to the ApplyActivity using intent extras
             intent.putExtra("company_name", companyName)
-            intent.putExtra("location", location)
-            intent.putExtra("description", description)
-            intent.putExtra("age", age)
+            intent.putExtra("category", location)
+            intent.putExtra("title",time)
+            intent.putExtra("type", age)
             startActivity(intent)
         }
     }

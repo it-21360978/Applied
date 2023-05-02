@@ -159,7 +159,7 @@ class job_list : AppCompatActivity() {
 
 class job_list : AppCompatActivity() {
 
-    private var dbref = FirebaseDatabase.getInstance().getReference("jobForms")
+    private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
     private lateinit var jobArrayList: ArrayList<company>
 

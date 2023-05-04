@@ -1,11 +1,14 @@
 package com.example.job_portal
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -16,6 +19,8 @@ class activity_insertion : AppCompatActivity(){
     private lateinit var email: EditText
     private lateinit var Msg: EditText
     private lateinit var btnSaveData: Button
+    private lateinit var  btnJob : CardView
+
 
     //create db reference
     private lateinit var dbRef: DatabaseReference
@@ -29,6 +34,9 @@ class activity_insertion : AppCompatActivity(){
         email = findViewById(R.id.Email)
         Msg = findViewById(R.id.Msg)
         btnSaveData = findViewById(R.id.btnSave)
+
+
+
 
         dbRef = FirebaseDatabase.getInstance().getReference("Inquiries")
 
@@ -74,7 +82,19 @@ class activity_insertion : AppCompatActivity(){
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
             }
 
+
+        btnJob = findViewById(R.id.Jobview)
+
+
+        btnJob.setOnClickListener{
+
+            val intent = Intent(this,job_category::class.java)
+            startActivity(intent)
+        }
     }
+
+
+
 
 }
 

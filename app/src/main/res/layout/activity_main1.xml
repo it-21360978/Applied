@@ -28,7 +28,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/job"
+            android:id="@+id/Jobview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -49,6 +49,7 @@
                 android:rotationX="4">
 
                 <ImageView
+                    android:id="@+id/Job1"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"

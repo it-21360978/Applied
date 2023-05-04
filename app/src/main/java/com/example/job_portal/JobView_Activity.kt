@@ -21,25 +21,6 @@ import com.google.firebase.database.ValueEventListener
 
 class JobView_Activity : AppCompatActivity() {
 
-    /*   private lateinit var binding: ActivityJobViewBinding
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: CompanyAdapter
-    private var jobList = ArrayList<company>()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityJobViewBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Initialize the RecyclerView
-        recyclerView = binding.rvJob
-        recyclerView.layoutManager = LinearLayoutManager(this)
-
-        adapter = CompanyAdapter(jobList)
-        recyclerView.adapter = adapter
-    }
-}
-*/
 
     private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
@@ -88,6 +69,20 @@ class JobView_Activity : AppCompatActivity() {
             val intent = Intent(this,Seeker_profile::class.java)
             startActivity(intent)
         }
+
+        val home = findViewById<ImageButton>(R.id.vhome)
+        home.setOnClickListener {
+            val intent = Intent(this,activity_insertion::class.java)
+            startActivity(intent)
+        }
+
+        val inq = findViewById<ImageButton>(R.id.vInqury)
+        inq.setOnClickListener {
+            val intent = Intent(this, InquiryMainActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
 
     }

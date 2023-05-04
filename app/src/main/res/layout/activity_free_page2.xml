@@ -49,8 +49,11 @@
         <LinearLayout
             android:layout_width="388dp"
             android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteY="62dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints">
 
             <ImageView

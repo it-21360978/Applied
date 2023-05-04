@@ -37,11 +37,11 @@
             android:id="@+id/emailEt"
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:background="@drawable/background_box"
             android:hint="Type your Email"
             android:inputType="textEmailAddress"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -83,23 +83,26 @@
 
         <RadioButton
             android:id="@+id/Lseeker"
-            android:layout_width="101dp"
-            android:layout_height="wrap_content"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
             android:background="@drawable/background_box"
             android:checked="true"
-            android:text="Seeker" />
+            android:text="Seeker"
+            android:layout_marginLeft="16dp"/>
 
         <RadioButton
             android:id="@+id/Lcompany"
-            android:layout_width="104dp"
-            android:layout_height="wrap_content"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
             android:background="@drawable/background_box"
-            android:text="Company" />
+            android:text="Company"
+            android:layout_marginLeft="15dp"/>
 
         <RadioButton
             android:id="@+id/Ladmin"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
             android:background="@drawable/background_box"
             android:checked="true"
             android:minHeight="48dp"

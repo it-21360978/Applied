@@ -19,11 +19,25 @@ class Seeker_profile : AppCompatActivity() {
         }
 
         val category = findViewById<ImageButton>(R.id.catogry)
+
         category.setOnClickListener {
             val intent = Intent(this, JobView_Activity::class.java)
             startActivity(intent)
         }
 
+
+        val home = findViewById<ImageButton>(R.id.imageView10)
+        home.setOnClickListener {
+            val intent = Intent(this, activity_insertion::class.java)
+            startActivity(intent)
+        }
+
+
+        val inq = findViewById<ImageButton>(R.id.imageView12)
+        inq.setOnClickListener {
+            val intent = Intent(this, InquiryMainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
 

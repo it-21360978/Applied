@@ -44,7 +44,7 @@ class SignInActivity : AppCompatActivity() {
                         "Company" -> {
                             firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                                 if (it.isSuccessful) {
-                                    val intent = Intent(this, Freelance::class.java)
+                                    val intent = Intent(this, company_dash::class.java)
                                     startActivity(intent)
                                 } else {
                                     Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
@@ -54,7 +54,7 @@ class SignInActivity : AppCompatActivity() {
                         "Seeker" -> {
                             firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                                 if (it.isSuccessful) {
-                                    val intent = Intent(this, free_page1::class.java)
+                                    val intent = Intent(this, Seeker_profile::class.java)
                                     startActivity(intent)
                                 } else {
                                     Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()

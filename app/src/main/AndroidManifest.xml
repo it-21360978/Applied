@@ -14,19 +14,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
+        <activity
+            android:name=".adminDash"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
 
 
         <activity
             android:name=".interview_1"
             android:exported="false" />
-
         <activity
             android:name=".skill_1"
             android:exported="false" />
         <activity
             android:name=".SkillDevelopment"
             android:exported="false" />
-
         <activity
             android:name=".free_page2"
             android:exported="false" />
@@ -35,7 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".Freelance"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".InquiryDetailsActivity"
             android:exported="true" />
@@ -45,8 +63,6 @@
         <activity
             android:name=".activity_insertion"
             android:exported="false" />
-
-
         <activity
             android:name=".recieve_job_list"
             android:exported="true" />
@@ -131,11 +147,7 @@
         </activity>
         <activity
             android:name=".InquiryMainActivity"
-            android:exported="true">
-
-        </activity>
-
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -149,12 +161,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-
-
         <activity
             android:name=".JobView_Activity"
             android:exported="true">
@@ -168,13 +174,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-
-
-
     </application>
 
 </manifest>

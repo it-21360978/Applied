@@ -1,0 +1,82 @@
+package com.example.job_portal
+
+import android.annotation.SuppressLint
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.*
+
+class post_jobs : AppCompatActivity() {
+
+
+    private lateinit var jobRecyclerView: RecyclerView
+    private lateinit var tvLoadingData: TextView
+    private lateinit var comList: ArrayList<CompanyData>
+    private lateinit var dbRef: DatabaseReference
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_post_jobs)
+
+        jobRecyclerView = findViewById(R.id.rvJob)
+        jobRecyclerView.layoutManager = LinearLayoutManager(this)
+        jobRecyclerView.setHasFixedSize(true)
+        tvLoadingData = findViewById(R.id.tvLoadingData)
+
+        comList = arrayListOf<CompanyData>()
+
+        getJobData()
+    }
+
+    private fun getJobData(){
+
+        jobRecyclerView.visibility = View.GONE
+       tvLoadingData.visibility = View.VISIBLE
+
+        dbRef = FirebaseDatabase.getInstance().getReference("Jobs")
+
+        dbRef.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                comList.clear()
+                if (snapshot.exists()){
+                    for (comSnap in snapshot.children){
+                        val comData = comSnap.getValue(CompanyData::class.java)
+                        comList.add(comData!!)
+                    }
+                    val mAdapter = jobsAdapter(comList)
+                    jobRecyclerView.adapter = mAdapter
+
+                  mAdapter.setOnItemClickListener(object : jobsAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+
+                            val intent = Intent(this@post_jobs, update_delete_view::class.java)
+
+                            //put extras
+                            intent.putExtra("CcomId", comList[position].CcomId)
+                            intent.putExtra("CcompanyName", comList[position].CcompanyName)
+                            intent.putExtra("Ctype", comList[position].Ctype)
+                            intent.putExtra("Ccategory", comList[position].Ccategory)
+                            intent.putExtra("Csalary", comList[position].Csalary)
+                            intent.putExtra("Ctitle", comList[position].Ctitle)
+                            startActivity(intent)
+                        }
+
+                    })
+
+                    jobRecyclerView.visibility = View.VISIBLE
+                   tvLoadingData.visibility = View.GONE
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
+    }
+}

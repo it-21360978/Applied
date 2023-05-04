@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvSeeker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".recieve_job_list">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="70dp">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/seeker1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Seeker 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconCompany1"
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/location"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/seekerjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iconCompany1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Mobile developer"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iconLocation"
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/resource_private" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iconLocation"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="25 years"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <Button
+                    android:id="@+id/more"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:background="@color/green"
+                    android:backgroundTint="@color/light_green"
+                    android:ellipsize="end"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="2dp"
+                    android:singleLine="true"
+                    android:text="More info"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:ellipsize="end"
+                    android:paddingStart="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="2dp"
+                    android:singleLine="true"
+                    android:text="2023.12.05 /22.10"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/photoPreviewLayout"
+            android:layout_width="42dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="648dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="#F1F1F1"
+            app:strokeWidth="0.5dp">
+
+            <ImageView
+                android:id="@+id/photoPreview"
+                android:layout_width="42dp"
+                android:layout_height="58dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/men" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>

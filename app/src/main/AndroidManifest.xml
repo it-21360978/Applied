@@ -15,6 +15,33 @@
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
         <activity
+            android:name=".recieve_job_list"
+            android:exported="true" />
+        <activity
+            android:name=".job_category"
+            android:exported="true" />
+        <activity
+            android:name=".seeker_details"
+            android:exported="true" />
+        <activity
+            android:name=".recieve_job_application"
+            android:exported="true" />
+        <activity
+            android:name=".update_delete_view"
+            android:exported="true" />
+        <activity
+            android:name=".edit_jobs"
+            android:exported="true" />
+        <activity
+            android:name=".postjobs_list"
+            android:exported="true" />
+        <activity
+            android:name=".post_jobs"
+            android:exported="true" />
+        <activity
+            android:name=".company_dash"
+            android:exported="true" />
+        <activity
             android:name=".job_add"
             android:exported="true" />
         <activity
@@ -34,7 +61,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".recentapplied"
             android:exported="true">
@@ -63,7 +89,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".jobeditDelete"
             android:exported="true">
@@ -71,7 +96,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

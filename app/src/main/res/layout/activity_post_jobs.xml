@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_top"
+    tools:context=".post_jobs">
+
+    <TextView
+        android:id="@+id/post_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Post Jobs"
+        android:textColor="#0E0D0D"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_jobs" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/top_border"
+        android:backgroundTint="@color/material_dynamic_NEUTRAL95"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Recently Post Jobs "
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/activity_postjobs_list" />
+
+        <TextView
+            android:id="@+id/tvLoadingData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Data....."
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+
+        app:srcCompat="@drawable/inquiry" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+
+        app:srcCompat="@drawable/category" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/profilenav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

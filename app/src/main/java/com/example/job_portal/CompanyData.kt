@@ -1,5 +1,9 @@
 package com.example.job_portal
 
-data class CompanyData ( val companyName:String?=null,val title:String?=null,
-                         val category:String?=null,val type:String?=null,val salary:String?=null,
-                         val description:String?=null)
+data class CompanyData ( var CcomId:String?=null,
+                         var CcompanyName:String?=null,
+                         var Ctitle:String?=null,
+                         var Ccategory:String?=null,
+                         var Ctype:String?=null,
+                         var Csalary:String?=null,
+                         var Cdescription:String?=null)

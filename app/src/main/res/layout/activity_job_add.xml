@@ -34,7 +34,7 @@
 
         <EditText
 
-            android:id="@+id/companyName"
+            android:id="@+id/companyname"
             android:layout_width="380dp"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"

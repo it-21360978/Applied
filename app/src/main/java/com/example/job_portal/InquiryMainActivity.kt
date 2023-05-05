@@ -16,6 +16,7 @@ class InquiryMainActivity : AppCompatActivity() {
     private lateinit var btnfree: CardView
     private lateinit var btnskill: CardView
     private lateinit var btnprofile: CardView
+    private lateinit var Jobview: CardView
 
 
 
@@ -35,6 +36,7 @@ class InquiryMainActivity : AppCompatActivity() {
         btnfree = findViewById(R.id.btnfree)
         btnskill = findViewById(R.id.btnskill)
         btnprofile=findViewById(R.id.btnprofile)
+        Jobview=findViewById(R.id.Jobview)
    
 
 
@@ -62,6 +64,13 @@ class InquiryMainActivity : AppCompatActivity() {
         btnprofile.setOnClickListener{
 
             val intent = Intent(this, Seeker_profile::class.java)
+            startActivity(intent)
+
+        }
+
+        Jobview.setOnClickListener{
+
+            val intent = Intent(this, job_category::class.java)
             startActivity(intent)
 
         }

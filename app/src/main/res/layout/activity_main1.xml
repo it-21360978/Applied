@@ -19,13 +19,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/top_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="-80dp"
         android:layout_marginRight="25dp"
-        android:columnCount="2"
-        android:rowCount="4"
 
-        >
+        android:columnCount="2"
+        android:rowCount="4">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Jobview"

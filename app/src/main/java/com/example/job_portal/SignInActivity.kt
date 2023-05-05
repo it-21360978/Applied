@@ -8,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.example.job_portal.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
+
 import job_list
 
 class SignInActivity : AppCompatActivity() {

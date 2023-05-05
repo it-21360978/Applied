@@ -5,6 +5,7 @@ package com.example.job_portal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -14,7 +15,7 @@ class InquiryMainActivity : AppCompatActivity() {
     private lateinit var btnInsertData: CardView
 
     private lateinit var btnfree: CardView
-    private lateinit var btnskill: CardView
+    private lateinit var btnI: CardView
     private lateinit var btnprofile: CardView
     private lateinit var Jobview: CardView
 
@@ -34,18 +35,18 @@ class InquiryMainActivity : AppCompatActivity() {
         btnInsertData = findViewById(R.id.btnInsertData)
 
         btnfree = findViewById(R.id.btnfree)
-        btnskill = findViewById(R.id.btnskill)
+
         btnprofile=findViewById(R.id.btnprofile)
         Jobview=findViewById(R.id.Jobview)
-   
+        btnI = findViewById(R.id.btnInquiry)
 
 
 
 
 
-        btnskill.setOnClickListener{
+        btnI.setOnClickListener{
 
-            val intent = Intent(this,interview_1::class.java)
+            val intent = Intent(this,Fetching_Activity::class.java)
             startActivity(intent)
         }
 
@@ -76,5 +77,11 @@ class InquiryMainActivity : AppCompatActivity() {
         }
 
 
+
+
     }
+
+
+
+
 }

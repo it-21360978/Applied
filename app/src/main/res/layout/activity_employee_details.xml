@@ -141,37 +141,37 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
                 card_view:srcCompat="@drawable/home" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
                 card_view:srcCompat="@drawable/box" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
                 card_view:srcCompat="@drawable/chat" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
                 card_view:srcCompat="@drawable/pp" />
         </LinearLayout>

@@ -4,10 +4,7 @@ package com.example.job_portal
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.FirebaseDatabase
 
@@ -28,6 +25,8 @@ class InquiryDetailsActivity : AppCompatActivity() {
 
         initView()
         setValuesToViews()
+
+
 
         btnUpdate.setOnClickListener {
             openUpdateDialog(
@@ -137,7 +136,27 @@ class InquiryDetailsActivity : AppCompatActivity() {
         val dbRef = FirebaseDatabase.getInstance().getReference("Inquiries").child(id)
         val empInfo = InquiryModel(id, name, email, msg)
         dbRef.setValue(empInfo)
+
+
+        val home = findViewById<ImageButton>(R.id.vhome)
+        home.setOnClickListener {
+            val intent = Intent(this,InquiryDetailsActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
 
 
 

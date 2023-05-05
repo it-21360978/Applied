@@ -32,5 +32,21 @@ class card_view : AppCompatActivity() {
             val intent = Intent(this, JobView_Activity::class.java)
             startActivity(intent)
         }
+
+        val home = findViewById<ImageButton>(R.id.imageView3)
+        home.setOnClickListener {
+            val intent = Intent(this, InquiryMainActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val inq= findViewById<ImageButton>(R.id.imageView6)
+        inq.setOnClickListener {
+            val intent = Intent(this, activity_insertion::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }

@@ -12,9 +12,12 @@ import com.google.firebase.database.FirebaseDatabase
 class InquiryMainActivity : AppCompatActivity() {
 
     private lateinit var btnInsertData: CardView
-    private lateinit var btnFetchData: CardView
+
     private lateinit var btnfree: CardView
     private lateinit var btnskill: CardView
+    private lateinit var btnprofile: CardView
+
+
 
 
 
@@ -28,9 +31,11 @@ class InquiryMainActivity : AppCompatActivity() {
         val firebase :DatabaseReference = FirebaseDatabase.getInstance().getReference()
 
         btnInsertData = findViewById(R.id.btnInsertData)
-        btnFetchData = findViewById(R.id.btnFetchData)
+
         btnfree = findViewById(R.id.btnfree)
         btnskill = findViewById(R.id.btnskill)
+        btnprofile=findViewById(R.id.btnprofile)
+   
 
 
 
@@ -54,9 +59,9 @@ class InquiryMainActivity : AppCompatActivity() {
             val intent = Intent(this,activity_insertion::class.java)
             startActivity(intent)
         }
-        btnFetchData.setOnClickListener{
+        btnprofile.setOnClickListener{
 
-            val intent = Intent(this, Fetching_Activity::class.java)
+            val intent = Intent(this, Seeker_profile::class.java)
             startActivity(intent)
 
         }

@@ -52,7 +52,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/search" />
+                    android:src="@drawable/baseline_border_color_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -89,7 +89,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/freelancing" />
+                    android:src="@drawable/baseline_question_mark_24" />
 
                 <TextView
 
@@ -105,7 +105,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/btnskill"
+            android:id="@+id/btnInq"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_row="2"

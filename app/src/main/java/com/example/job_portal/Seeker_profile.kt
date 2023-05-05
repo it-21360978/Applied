@@ -28,14 +28,14 @@ class Seeker_profile : AppCompatActivity() {
 
         val home = findViewById<ImageButton>(R.id.imageView10)
         home.setOnClickListener {
-            val intent = Intent(this, activity_insertion::class.java)
+            val intent = Intent(this, InquiryMainActivity::class.java)
             startActivity(intent)
         }
 
 
         val inq = findViewById<ImageButton>(R.id.imageView12)
         inq.setOnClickListener {
-            val intent = Intent(this, InquiryMainActivity::class.java)
+            val intent = Intent(this, InquiryDetailsActivity::class.java)
             startActivity(intent)
         }
     }

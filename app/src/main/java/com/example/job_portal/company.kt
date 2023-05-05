@@ -1,4 +1,4 @@
 package com.example.job_portal
 
-data class company(var companyName:String?=null, var category:String?=null,val type: String = "",var salary:String?=null,var description:String?=null,var title:String?=null
+data class company(var CcompanyName:String?=null, var Ccategory:String?=null,val Ctype: String = "",var Csalary:String?=null,var Cdescription:String?=null,var Ctitle:String?=null
 )//Name,Location

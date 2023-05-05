@@ -325,45 +325,42 @@
 
     </LinearLayout>
 
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="48dp"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView15"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:srcCompat="@drawable/home" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="72dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView16"
-
-        app:srcCompat="@drawable/inquiry" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView14"
-
-        app:srcCompat="@drawable/category" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/profilenav" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/vhome"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/vCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/category" />
+
+        <ImageButton
+            android:id="@+id/vInqury"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/inquiry" />
+
+        <ImageButton
+            android:id="@+id/vProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profilenav" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

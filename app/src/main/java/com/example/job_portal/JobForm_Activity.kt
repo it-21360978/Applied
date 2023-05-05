@@ -46,10 +46,10 @@ class JobForm_Activity : AppCompatActivity() {
         }
 
         // Get the job data from the intent(company adapter eken data gannawa )
-        val companyName = intent.getStringExtra("company_name")
-        val location = intent.getStringExtra("category")
-        val description = intent.getStringExtra("title")
-        val age = intent.getStringExtra("type")
+        val companyName = intent.getStringExtra("Ccompany_name")
+        val location = intent.getStringExtra("Ccategory")
+        val description = intent.getStringExtra("Ctitle")
+        val type = intent.getStringExtra("Csalary")
      /*   val time = intent.getStringExtra("title")
         val requirements = intent.getStringExtra("description")*/
 
@@ -57,14 +57,14 @@ class JobForm_Activity : AppCompatActivity() {
         // Update the UI with the job details(company adapter eken pass karana data xml eke view karanwa)
         val companyTextView = findViewById<TextView>(R.id.jobname)
         val locationTextView = findViewById<TextView>(R.id.jobCmpny)
-        val typeTextView = findViewById<TextView>(R.id.joblocation)
+       // val typeTextView = findViewById<TextView>(R.id.joblocation)
         val descriptionTextView = findViewById<TextView>(R.id.timejob)
 
 
         companyTextView.text = companyName
         locationTextView.text = location
         descriptionTextView.text = description
-        typeTextView.text=age
+        //typeTextView.text=type
 
 
 

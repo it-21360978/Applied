@@ -100,17 +100,17 @@ class CompanyAdapter(private val jobList: ArrayList<company>) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = jobList[position]
-        holder.name.text = currentItem.companyName
-        holder.location.text = currentItem.category
+        holder.name.text = currentItem.CcompanyName
+        holder.location.text = currentItem.Ccategory
 
         // Set click listener for the list item
         holder.itemView.setOnClickListener {
             // Create an Intent to navigate to the DetailsActivity
             val intent = Intent(holder.itemView.context,job_list::class.java)
             // Add the data of the clicked item to the Intent
-            intent.putExtra("company_name", currentItem.companyName)
-            intent.putExtra("category", currentItem.category)
-            intent.putExtra("type", currentItem.type)
+            intent.putExtra("Ccompany_name", currentItem.CcompanyName)
+            intent.putExtra("Ccategory", currentItem.Ccategory)
+            intent.putExtra("Ctype", currentItem.Ctype)
             // Add more data fields as needed
 
             // Start the DetailsActivity with the Intent and pass the data to it
@@ -122,11 +122,11 @@ class CompanyAdapter(private val jobList: ArrayList<company>) :
             // Create an Intent to navigate to the ApplyActivity
             val intent = Intent(holder.itemView.context,MainActivity::class.java)
             // Add the data of the clicked item to the Intent(company data class eke declare karapuwata data gannawa)
-            intent.putExtra("company_name", currentItem.companyName)
-            intent.putExtra("category", currentItem.category)
-            intent.putExtra("title", currentItem.title)
-            intent.putExtra("type",currentItem.type)
-            intent.putExtra("description",currentItem.description)
+            intent.putExtra("Ccompany_name", currentItem.CcompanyName)
+            intent.putExtra("Ccategory", currentItem.Ccategory)
+            intent.putExtra("Ctitle", currentItem.Ctitle)
+            intent.putExtra("Ctype",currentItem.Ctype)
+            intent.putExtra("Cdescription",currentItem.Cdescription)
             // Add more data fields as needed
 
             // Start the ApplyActivity with the Intent and pass the data to it

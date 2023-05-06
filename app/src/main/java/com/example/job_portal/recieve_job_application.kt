@@ -11,7 +11,7 @@ import com.google.firebase.database.*
 
 class recieve_job_application : AppCompatActivity() {
 
-    private lateinit var SekRecyclerView: RecyclerView
+   private lateinit var SekRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
     private lateinit var SekList: ArrayList<Customer>
     private lateinit var dbRef: DatabaseReference
@@ -20,7 +20,7 @@ class recieve_job_application : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recieve_job_application)
 
-        SekRecyclerView = findViewById(R.id.rvSeeker)
+       SekRecyclerView = findViewById(R.id.rvSeeker)
         SekRecyclerView.layoutManager = LinearLayoutManager(this)
         SekRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
@@ -35,7 +35,7 @@ class recieve_job_application : AppCompatActivity() {
         SekRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
 
-        dbRef = FirebaseDatabase.getInstance().getReference("jobForms")
+        dbRef = FirebaseDatabase.getInstance().getReference("Job_Forms")
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -54,18 +54,18 @@ class recieve_job_application : AppCompatActivity() {
                             val intent = Intent(this@recieve_job_application, seeker_details::class.java)
 
                             //put extras
-                            intent.putExtra("sfullName", SekList[position].sfullName)
+                          /*  intent.putExtra("sfullName", SekList[position].sfullName)
                             intent.putExtra("jobName", SekList[position].jobName)
                             intent.putExtra("semail", SekList[position].semail)
                             intent.putExtra("saddress", SekList[position].saddress)
                             intent.putExtra("smobile", SekList[position].smobile)
                             intent.putExtra("cvUrl", SekList[position].cvUrl)
-                            startActivity(intent)
+                            startActivity(intent)*/
                         }
 
                     })
 
-                    SekRecyclerView.visibility = View.VISIBLE
+                   SekRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
                 }
             }
@@ -75,5 +75,10 @@ class recieve_job_application : AppCompatActivity() {
             }
 
         })
+    }
+    override fun onBackPressed() {
+        val intent = Intent(this, company_dash::class.java)
+        startActivity(intent)
+        finish()
     }
 }

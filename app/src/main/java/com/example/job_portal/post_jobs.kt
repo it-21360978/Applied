@@ -26,6 +26,7 @@ class post_jobs : AppCompatActivity() {
     private lateinit var vhome: ImageButton
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_post_jobs)
@@ -44,7 +45,7 @@ class post_jobs : AppCompatActivity() {
 
 
         vProfile.setOnClickListener {
-            val intent = Intent(this,Seeker_profile::class.java)
+            val intent = Intent(this,company_dash::class.java)
             startActivity(intent)
         }
         vCategory.setOnClickListener {
@@ -62,6 +63,7 @@ class post_jobs : AppCompatActivity() {
             val intent = Intent(this, InquiryMainActivity::class.java)
             startActivity(intent)
         }
+
 
 
     }
@@ -111,7 +113,15 @@ class post_jobs : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
 
+
+
         })
+
+    }
+    override fun onBackPressed() {
+        val intent = Intent(this, company_dash::class.java)
+        startActivity(intent)
+        finish()
     }
 
 

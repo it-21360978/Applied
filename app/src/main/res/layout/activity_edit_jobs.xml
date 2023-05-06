@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".edit_jobs"
-    android:background="@drawable/profile_top"
+    android:background="@drawable/bg_view"
     android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="5dp"
         android:orientation="vertical"
         android:padding="10dp"
@@ -20,47 +20,78 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <EditText
             android:id="@+id/ecompanyname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
             android:hint="Company Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#0E0D0D"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/etitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
             android:ems="10"
-            android:hint="Job title" />
+            android:hint="Job title"
+            android:textColor="#040303"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/ecategory"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
             android:ems="10"
-            android:hint="Job category"
-            android:inputType="textPersonName" />
+            android:hint="Job Category"
+            android:inputType="textPersonName"
+            android:textColor="#070606"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/etype"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
+            android:ems="10"
             android:hint="Job type"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#070606"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/esalary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
+            android:ems="10"
             android:hint="Job salary"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#070606"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/edescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_box"
+            android:ems="10"
+            android:hint="Job Description"
+            android:inputType="textPersonName"
+            android:textColor="#070606"
+            android:textColorHint="@color/black" />
+
+
+
 
 
         <Button

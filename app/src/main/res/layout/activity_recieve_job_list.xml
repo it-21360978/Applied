@@ -42,7 +42,7 @@
                 android:layout_marginBottom="3dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Seeker 1"
+                android:text="Gihan"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 

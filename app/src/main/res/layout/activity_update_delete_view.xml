@@ -4,44 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/profile_top"
+    android:background="@drawable/bg_view"
     tools:context=".update_delete_view">
 
-
-
+    <TextView
+        android:id="@+id/jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Job details"
+        android:textColor="#0E0D0D"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
-            android:weightSum="2"
 
-            >
+            android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                >
+                android:layout_weight="0.6">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="com id"
+                    android:text="com id:"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -70,32 +79,29 @@
         </LinearLayout>
 
 
-
-
         <LinearLayout
             android:id="@+id/id_lin"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
-            android:weightSum="2"
 
-            >
+            android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                >
+                android:layout_weight="0.6">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Company Name"
+                    android:text="Company Name:"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -128,22 +134,24 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
+
             android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                >
+                android:layout_weight="0.6">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Job type"
+                    android:text="Job type:"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -176,24 +184,25 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
-            android:weightSum="2"
+            android:weightSum="2">
 
             >
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                >
+                android:layout_weight="0.6">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Job category"
+                    android:text="Job category:"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 
@@ -226,13 +235,15 @@
 
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
-            android:weightSum="2"
+
+            android:weightSum="2">
 
             >
 
@@ -247,7 +258,7 @@
                     android:layout_gravity="center"
 
                     android:gravity="center"
-                    android:text="Job Salary"
+                    android:text="Job Salary:"
                     android:textColor="@color/black"
                     android:textSize="15sp"
 
@@ -281,27 +292,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
             android:orientation="horizontal"
-            android:weightSum="2"
+            android:weightSum="2">
 
             >
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                >
+                android:layout_weight="0.6">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Job title"
+                    android:text="Job title:"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -326,8 +337,59 @@
 
             </LinearLayout>
 
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_box"
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Description:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
 
         </LinearLayout>
+
+
 
         <Button
             android:id="@+id/btnUpdate"

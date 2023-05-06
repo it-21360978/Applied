@@ -18,6 +18,7 @@ class update_delete_view : AppCompatActivity() {
     private lateinit var type: TextView
     private lateinit var category: TextView
     private lateinit var salary: TextView
+    private lateinit var description: TextView
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
@@ -51,6 +52,7 @@ class update_delete_view : AppCompatActivity() {
         category = findViewById(R.id.category)
         salary = findViewById(R.id. salary)
         title = findViewById(R.id.title)
+        description = findViewById(R.id.description)
 
 
         btnUpdate = findViewById(R.id.btnUpdate)
@@ -64,6 +66,7 @@ class update_delete_view : AppCompatActivity() {
         category.text = intent.getStringExtra("Ccategory")
         salary.text = intent.getStringExtra("Csalary")
         title.text = intent.getStringExtra("Ctitle")
+        description.text = intent.getStringExtra("Cdescription")
 
     }
 
@@ -83,6 +86,7 @@ class update_delete_view : AppCompatActivity() {
         val ecategory = mDialogView.findViewById<EditText>(R.id.ecategory)
         val etype = mDialogView.findViewById<EditText>(R.id.etype)
         val esalary= mDialogView.findViewById<EditText>(R.id.esalary)
+        val edescription= mDialogView.findViewById<EditText>(R.id.edescription)
         val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
 
         ecompanyname.setText(intent.getStringExtra("CcompanyName").toString())
@@ -90,6 +94,7 @@ class update_delete_view : AppCompatActivity() {
         ecategory.setText(intent.getStringExtra("Ccategory").toString())
         etype.setText(intent.getStringExtra("Ctype").toString())
         esalary.setText(intent.getStringExtra("Csalary").toString())
+        edescription.setText(intent.getStringExtra("Cdescription").toString())
 
         mDialog.setTitle("Updating $CcompanyName Record")
 
@@ -103,7 +108,8 @@ class update_delete_view : AppCompatActivity() {
                 etitle.text.toString(),
                 ecategory.text.toString(),
                 etype.text.toString(),
-                esalary.text.toString()
+                esalary.text.toString(),
+                edescription.text.toString()
 
             )
 
@@ -125,10 +131,11 @@ class update_delete_view : AppCompatActivity() {
         Title: String,
         Category: String,
         Salary:String,
-        Type: String
+        Type: String,
+        Description:String,
     ) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Jobs").child(Id)
-        val comInfo = CompanyData(Id, Name, Title, Category, Salary,Type)
+        val comInfo = CompanyData(Id, Name, Title, Category, Salary,Type,Description)
         dbRef.setValue(comInfo)
     }
 

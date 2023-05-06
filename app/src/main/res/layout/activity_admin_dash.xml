@@ -13,14 +13,14 @@
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/bg_view" />
+        android:background="@drawable/bb" />
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/top_view"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="-80dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="25dp"
         android:columnCount="2"
         android:rowCount="4"
@@ -42,7 +42,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="148dp"
                 android:background="@drawable/background_box"
                 android:gravity="center"
                 android:orientation="vertical"

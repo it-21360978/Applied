@@ -29,7 +29,7 @@ class adminDash : AppCompatActivity() {
 
         btnInq.setOnClickListener{
 
-            val intent = Intent(this,Fetching_Activity::class.java)
+            val intent = Intent(this,adminInqView::class.java)
             startActivity(intent)
         }
     }

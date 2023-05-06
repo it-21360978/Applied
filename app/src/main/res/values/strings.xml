@@ -83,5 +83,6 @@
     <string name="recieve_jobs">IT JOBS</string>
     <string name="search">search for...</string>
     <string name="job1">job1</string>
+    <string name="sign_in_failed">gg</string>
 
 </resources>

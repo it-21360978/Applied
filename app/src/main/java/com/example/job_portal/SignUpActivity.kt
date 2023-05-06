@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
-    private lateinit var firebaseAuth: FirebaseAuth
+    lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +81,10 @@ class SignUpActivity : AppCompatActivity() {
             }
 
         }
+
+    }
+
+    fun signUpWithEmailAndPassword(s: String, s1: String, s2: String) {
 
     }
 }

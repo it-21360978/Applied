@@ -14,8 +14,8 @@ class InquiryMainActivity : AppCompatActivity() {
 
     private lateinit var btnInsertData: CardView
 
-    private lateinit var btnfree: CardView
-    private lateinit var btnI: CardView
+    lateinit var btnfree: CardView
+    lateinit var btnI: CardView
     private lateinit var btnprofile: CardView
     private lateinit var Jobview: CardView
 

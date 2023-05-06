@@ -11,9 +11,9 @@ import com.google.firebase.database.FirebaseDatabase
 class InquiryDetailsActivity : AppCompatActivity() {
 
     private lateinit var Id: TextView
-    private lateinit var Name: TextView
-    private lateinit var Email: TextView
-    private lateinit var Inq: TextView
+    lateinit var Name: TextView
+    lateinit var Email: TextView
+    lateinit var Inq: TextView
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
@@ -61,7 +61,7 @@ class InquiryDetailsActivity : AppCompatActivity() {
 
     }
 
-    private fun deleteRecord(
+    fun deleteRecord(
         id: String
     ){
         val dbRef = FirebaseDatabase.getInstance().getReference("Inquiries").child(id)
@@ -78,7 +78,7 @@ class InquiryDetailsActivity : AppCompatActivity() {
         }
     }
 
-    private fun openUpdateDialog(
+    fun openUpdateDialog(
         Id: String,
         empName: String,
 
@@ -127,7 +127,7 @@ class InquiryDetailsActivity : AppCompatActivity() {
     }
 
 
-    private fun updateEmpData(
+    fun updateEmpData(
         id: String,
         name: String,
         email: String,

@@ -15,7 +15,11 @@
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
         <activity
+
             android:name=".adminInqView"
+
+            android:name=".jobs_categoryby"
+
             android:exported="false" />
         <activity
             android:name=".launchActivity"

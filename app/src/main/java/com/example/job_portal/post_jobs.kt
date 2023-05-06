@@ -5,6 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +20,12 @@ class post_jobs : AppCompatActivity() {
     private lateinit var comList: ArrayList<CompanyData>
     private lateinit var dbRef: DatabaseReference
 
+    private lateinit var vProfile: ImageButton
+    private lateinit var vCategory: ImageButton
+    private lateinit var vInqury: ImageButton
+    private lateinit var vhome: ImageButton
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,10 +35,37 @@ class post_jobs : AppCompatActivity() {
         jobRecyclerView.layoutManager = LinearLayoutManager(this)
         jobRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
-
+        vProfile= findViewById(R.id.vProfile )
+        vCategory=findViewById(R.id.vCategory)
+        vInqury= findViewById(R.id.vInqury)
+        vhome=findViewById(R.id.vhome)
         comList = arrayListOf<CompanyData>()
 
         getJobData()
+
+
+        vProfile.setOnClickListener {
+            val intent = Intent(this,company_dash::class.java)
+            startActivity(intent)
+        }
+        vCategory.setOnClickListener {
+            val intent = Intent(this,job_category::class.java)
+            startActivity(intent)
+        }
+
+
+        vInqury.setOnClickListener {
+            val intent = Intent(this,activity_insertion::class.java)
+            startActivity(intent)
+        }
+
+        vhome.setOnClickListener {
+            val intent = Intent(this, InquiryMainActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 
     private fun getJobData(){
@@ -63,6 +98,7 @@ class post_jobs : AppCompatActivity() {
                             intent.putExtra("Ccategory", comList[position].Ccategory)
                             intent.putExtra("Csalary", comList[position].Csalary)
                             intent.putExtra("Ctitle", comList[position].Ctitle)
+                            intent.putExtra("Cdescription", comList[position].Cdescription)
                             startActivity(intent)
                         }
 
@@ -77,6 +113,16 @@ class post_jobs : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
 
+
+
         })
+
     }
+    override fun onBackPressed() {
+        val intent = Intent(this, company_dash::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+
 }

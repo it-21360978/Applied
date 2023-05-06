@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/topBox"
-        app:srcCompat="@drawable/jobpic" />
+        app:srcCompat="@drawable/userjob" />
 
     <TextView
         android:id="@+id/jobname"
@@ -59,7 +59,7 @@
             android:id="@+id/dot1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="64dp"
             android:layout_marginTop="228dp"
             app:srcCompat="@drawable/dot" />
 
@@ -75,29 +75,10 @@
             android:textStyle="italic" />
 
         <ImageView
-            android:id="@+id/dot2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="228dp"
-            app:srcCompat="@drawable/dot" />
-
-        <TextView
-            android:id="@+id/joblocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="220dp"
-            android:text="@string/Job_list_location"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="italic" />
-
-        <ImageView
             android:id="@+id/dot3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="60dp"
             android:layout_marginTop="228dp"
             app:srcCompat="@drawable/dot" />
 

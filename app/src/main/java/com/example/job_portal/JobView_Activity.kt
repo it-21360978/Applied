@@ -24,7 +24,7 @@ class JobView_Activity : AppCompatActivity() {
 
     private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
-    private lateinit var jobArrayList: ArrayList<company>
+    lateinit var jobArrayList: ArrayList<company>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +41,7 @@ class JobView_Activity : AppCompatActivity() {
         getJobData()
     }
 
-    private fun getJobData(){
+    fun getJobData(){
         dbref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 

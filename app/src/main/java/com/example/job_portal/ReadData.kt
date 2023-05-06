@@ -148,6 +148,6 @@ class ReadData : AppCompatActivity() {
 
 }
 
-private fun Intent.putExtra(s: String, job: Job) {
+fun Intent.putExtra(s: String, job: Job) {
 
 }

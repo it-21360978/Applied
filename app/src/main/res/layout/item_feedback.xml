@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8899F8">
+
+    <TextView
+        android:id="@+id/feedback_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="30dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/star_item_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/star_item_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text_view"
+        app:srcCompat="@drawable/baseline_star_rate" />
+
+    <ImageView
+        android:id="@+id/star_item_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/star_item_3"
+        app:layout_constraintStart_toEndOf="@+id/star_item_1"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text_view"
+        app:srcCompat="@drawable/baseline_star_rate" />
+
+    <ImageView
+        android:id="@+id/star_item_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/star_item_4"
+        app:layout_constraintStart_toEndOf="@+id/star_item_2"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text_view"
+        app:srcCompat="@drawable/baseline_star_rate" />
+
+    <ImageView
+        android:id="@+id/star_item_4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/star_item_5"
+        app:layout_constraintStart_toEndOf="@+id/star_item_3"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text_view"
+        app:srcCompat="@drawable/baseline_star_rate" />
+
+    <ImageView
+        android:id="@+id/star_item_5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="131dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/star_item_4"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text_view"
+        app:srcCompat="@drawable/baseline_star_rate" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#3F51B5"
+        android:text="edit"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/star_item_1" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#E61805"
+        android:text="delete"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/star_item_4" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="10dp"
+        android:background="#3F51B5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_button"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

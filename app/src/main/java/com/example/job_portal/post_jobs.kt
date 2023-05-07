@@ -11,6 +11,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import java.text.DateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class post_jobs : AppCompatActivity() {
 
@@ -41,6 +44,8 @@ class post_jobs : AppCompatActivity() {
         vhome=findViewById(R.id.vhome)
         comList = arrayListOf<CompanyData>()
 
+
+
         getJobData()
 
 
@@ -65,7 +70,6 @@ class post_jobs : AppCompatActivity() {
         }
 
 
-
     }
 
     private fun getJobData(){
@@ -82,7 +86,10 @@ class post_jobs : AppCompatActivity() {
                     for (comSnap in snapshot.children){
                         val comData = comSnap.getValue(CompanyData::class.java)
                         comList.add(comData!!)
+
                     }
+
+
                     val mAdapter = jobsAdapter(comList)
                     jobRecyclerView.adapter = mAdapter
 

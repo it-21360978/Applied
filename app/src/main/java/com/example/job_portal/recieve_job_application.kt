@@ -1,5 +1,6 @@
 package com.example.job_portal
 
+import Job
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,9 +12,9 @@ import com.google.firebase.database.*
 
 class recieve_job_application : AppCompatActivity() {
 
-   private lateinit var SekRecyclerView: RecyclerView
+    private  lateinit var SekRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
-    private lateinit var SekList: ArrayList<Customer>
+    private lateinit var SekList: ArrayList<Job>
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,24 +26,24 @@ class recieve_job_application : AppCompatActivity() {
         SekRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
-        SekList = arrayListOf<Customer>()
+        SekList = arrayListOf<Job>()
 
         getSekData()
     }
 
-    private fun getSekData(){
+   private fun getSekData(){
 
         SekRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Job_Forms")
+        dbRef = FirebaseDatabase.getInstance().getReference("jobForms")
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 SekList.clear()
                 if (snapshot.exists()){
                     for (SekSnap in snapshot.children){
-                        val SekData = SekSnap.getValue(Customer::class.java)
+                        val SekData = SekSnap.getValue(Job::class.java)
                         SekList.add(SekData!!)
                     }
                     val mAdapter = SeekerAdapter(SekList)
@@ -54,13 +55,13 @@ class recieve_job_application : AppCompatActivity() {
                             val intent = Intent(this@recieve_job_application, seeker_details::class.java)
 
                             //put extras
-                          /*  intent.putExtra("sfullName", SekList[position].sfullName)
+                           intent.putExtra("fullName", SekList[position].fullName)
                             intent.putExtra("jobName", SekList[position].jobName)
-                            intent.putExtra("semail", SekList[position].semail)
-                            intent.putExtra("saddress", SekList[position].saddress)
-                            intent.putExtra("smobile", SekList[position].smobile)
+                            intent.putExtra("email", SekList[position].email)
+                            intent.putExtra("address", SekList[position].address)
+                            intent.putExtra("mobile", SekList[position].mobile)
                             intent.putExtra("cvUrl", SekList[position].cvUrl)
-                            startActivity(intent)*/
+                            startActivity(intent)
                         }
 
                     })

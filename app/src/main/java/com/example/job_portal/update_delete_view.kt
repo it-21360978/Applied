@@ -12,15 +12,15 @@ import com.google.firebase.database.FirebaseDatabase
 
 class update_delete_view : AppCompatActivity() {
 
-    private lateinit var comId: TextView
-    private lateinit var companyname: TextView
-    private lateinit var title: TextView
-    private lateinit var type: TextView
-    private lateinit var category: TextView
-    private lateinit var salary: TextView
-    private lateinit var description: TextView
-    private lateinit var btnUpdate: Button
-    private lateinit var btnDelete: Button
+     private lateinit var comId: TextView
+     private lateinit var companyname: TextView
+     private lateinit var title: TextView
+     private lateinit var type: TextView
+     private lateinit var category: TextView
+     private lateinit var salary: TextView
+     private lateinit var description: TextView
+     private lateinit var btnUpdate: Button
+     private lateinit var btnDelete: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +45,7 @@ class update_delete_view : AppCompatActivity() {
 }
 
 
-    private fun initView() {
+     private fun initView() {
         comId = findViewById(R.id.comId)
         companyname = findViewById(R.id.companyname)
         type = findViewById(R.id.type)
@@ -70,7 +70,7 @@ class update_delete_view : AppCompatActivity() {
 
     }
 
-    private fun openUpdateDialog(
+     private fun openUpdateDialog(
         CcomId: String,
         CcompanyName: String
 
@@ -124,7 +124,7 @@ class update_delete_view : AppCompatActivity() {
         }
     }
 
-    private fun updateComData(
+    private  fun updateComData(
 
         Id: String,
         Name: String,
@@ -139,7 +139,7 @@ class update_delete_view : AppCompatActivity() {
         dbRef.setValue(comInfo)
     }
 
-    private fun deleteRecord(
+  private fun deleteRecord(
         Id: String
     ){
         val dbRef = FirebaseDatabase.getInstance().getReference("Jobs").child(Id)

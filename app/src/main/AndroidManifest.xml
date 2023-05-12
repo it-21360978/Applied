@@ -15,16 +15,14 @@
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
         <activity
-            android:name=".jobs_categoryby3"
-            android:exported="false" />
+            android:name=".CountActivity"
+            android:exported="true" />
+
         <activity
-            android:name=".jobs_categoryby2"
-            android:exported="false" />
+            android:name=".RegisteredUsersActivity"
+            android:exported="true" />
         <activity
-            android:name=".jobs_categoryby1"
-            android:exported="false" />
-        <activity
-            android:name=".jobs_categoryby"
+            android:name=".adminInqView"
             android:exported="false" />
         <activity
             android:name=".launchActivity"
@@ -50,9 +48,7 @@
         <activity
             android:name=".skill_1"
             android:exported="false" />
-        <activity
-            android:name=".SkillDevelopment"
-            android:exported="false" />
+
         <activity
             android:name=".free_page2"
             android:exported="false" />

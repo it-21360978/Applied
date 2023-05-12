@@ -24,7 +24,7 @@ class JobView_Activity : AppCompatActivity() {
 
     private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
-    private lateinit var jobArrayList: ArrayList<company>
+    lateinit var jobArrayList: ArrayList<company>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,8 +41,9 @@ class JobView_Activity : AppCompatActivity() {
         getJobData()
     }
 
-    private fun getJobData(){
-        dbref.orderByChild("ccategory").equalTo("it").addValueEventListener(object : ValueEventListener {
+    fun getJobData(){
+        dbref.addValueEventListener(object : ValueEventListener {
+
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()){
@@ -87,72 +88,4 @@ class JobView_Activity : AppCompatActivity() {
 
     }
 }
-
-   /* private var dbref = FirebaseDatabase.getInstance().getReference("jobForms")
-    private lateinit var jobRecyclerView: RecyclerView
-    private lateinit var jobArrayList: ArrayList<company>
-    private lateinit var searchEditText: EditText
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_job_view)
-
-        jobRecyclerView = findViewById(R.id.rvJob)
-        jobRecyclerView.layoutManager = LinearLayoutManager(this)
-        jobRecyclerView.setHasFixedSize(true)
-
-        // Initialize the search EditText
-        searchEditText = findViewById(R.id.searchbar)
-
-        jobArrayList = arrayListOf<company>()
-        val companyAdapter = CompanyAdapter(jobArrayList)
-        jobRecyclerView.adapter = companyAdapter
-
-        getJobData()
-
-        // Add a text listener to the search EditText
-        searchEditText.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // Do nothing
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                // Get the search query from the EditText
-                val searchQuery = s.toString().toLowerCase()
-
-                // Filter the jobArrayList based on the search query
-                val filteredList = jobArrayList.filter { company ->
-                    company.sfullName?.toLowerCase()?.contains(searchQuery) ?: false
-                }
-
-//                // Update the adapter with the filtered list
-//                companyAdapter.updateList(filteredList)
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // Do nothing
-            }
-        })
-    }
-
-    private fun getJobData() {
-        dbref.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-
-                if (snapshot.exists()) {
-                    for (jobSnapshot in snapshot.children) {
-                        val job = jobSnapshot.getValue(company::class.java)
-
-                        jobArrayList.add(job!!)
-                    }
-                    jobRecyclerView.adapter?.notifyDataSetChanged()
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                // Do nothing for now
-            }
-        })
-    }
-}*/
 

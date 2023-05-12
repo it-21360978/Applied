@@ -8,7 +8,7 @@ import androidx.cardview.widget.CardView
 
 class Freelance : AppCompatActivity() {
 
-    private lateinit var btnGetstart : Button
+    lateinit var btnGetstart : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,4 +23,6 @@ class Freelance : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+
 }

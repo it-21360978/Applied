@@ -61,7 +61,7 @@
     <string name="submitbtn">Submit</string>
     <string name="interview">Improving your interview skills can make a big difference in landing a job. To prepare for an interview, start by researching the company and its mission. This will help you to answer questions about why you want to work there and what you can contribute to the company. Practice common interview questions out loud to build your confidence and improve your responses. It\'s also important to dress professionally, arrive early, and make a good first impression. During the interview, listen carefully to the questions and take your time when answering. Finally, remember to thank the interviewer for their time and follow up with a thank you note or email.</string>
     <string name="job">count</string>
-    <string name="free">Other</string>
+    <string name="free">Skills</string>
     <string name="skills">Inquiry List</string>
     <string name="feedbackAdd">Feedback List</string>
     <string name="addinq">Inquiries</string>

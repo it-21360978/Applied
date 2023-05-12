@@ -48,7 +48,9 @@
                 android:background="@drawable/background_box"
                 android:drawableLeft="@drawable/baseline_bookmarks_24"
                 android:drawablePadding="19dp"
-                android:hint="xxxxxxxxxxxxxxxxxxxdv"
+
+                android:layout_marginRight="35px"
+                android:layout_marginLeft="35px"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -62,7 +64,9 @@
                 android:background="@drawable/background_box"
                 android:drawableLeft="@drawable/baseline_border_color_24"
                 android:drawablePadding="19dp"
-                android:hint="@string/hint3"
+
+                android:layout_marginRight="35px"
+                android:layout_marginLeft="35px"
                 android:inputType="text"
                 android:minHeight="48dp"
                 android:padding="8dp"
@@ -77,7 +81,9 @@
                 android:background="@drawable/background_box"
                 android:drawableLeft="@drawable/baseline_alternate_email_24"
                 android:drawablePadding="19dp"
-                android:hint="@string/hint2"
+
+                android:layout_marginRight="35px"
+                android:layout_marginLeft="35px"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -91,7 +97,9 @@
                 android:background="@drawable/background_box"
                 android:drawableLeft="@drawable/baseline_message_24"
                 android:drawablePadding="19dp"
-                android:hint="xxxxxxxxxxxxxxxxxxx"
+
+                android:layout_marginRight="35px"
+                android:layout_marginLeft="35px"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -99,10 +107,12 @@
 
             <Button
                 android:id="@+id/btnUpdate"
-                android:layout_width="287dp"
-                android:layout_height="64dp"
+                android:layout_width="276dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purple"
+                android:layout_marginRight="35px"
+                android:backgroundTint="#B5FEAF"
                 android:gravity="center"
                 android:text="@string/Edit"
                 android:textColor="@color/black"
@@ -112,9 +122,11 @@
 
             <Button
                 android:id="@+id/btnDelete"
-                android:layout_width="287dp"
-                android:layout_height="63dp"
+                android:layout_width="278dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="30dp"
+                android:layout_marginRight="35px"
                 android:backgroundTint="#FFB2B2"
                 android:text="@string/Delete"
                 android:textColor="@color/black"
@@ -122,13 +134,13 @@
                 android:textStyle="bold"
                 app:cornerRadius="20dp" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -136,45 +148,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/home" />
-
-            <ImageButton
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/box" />
-
-            <ImageButton
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/chat" />
-
-            <ImageButton
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                card_view:srcCompat="@drawable/pp" />
-        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

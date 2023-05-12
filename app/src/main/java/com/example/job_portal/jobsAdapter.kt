@@ -29,7 +29,7 @@ class jobsAdapter(private val comList:ArrayList<CompanyData>):
         val currentCom = comList[position]
         holder.companyname.text = currentCom.CcompanyName
         holder.job1.text = currentCom.Ctitle
-        holder.salary.text = currentCom.Csalary
+        holder.type.text = currentCom.Ctype
     }
 
         override fun getItemCount(): Int {
@@ -42,7 +42,7 @@ class jobsAdapter(private val comList:ArrayList<CompanyData>):
 
             val companyname: TextView = itemView.findViewById(R.id.companyname)
             val job1: TextView = itemView.findViewById(R.id.job1)
-            val salary: TextView = itemView.findViewById(R.id.salary)
+            val type: TextView = itemView.findViewById(R.id.type)
 
            init {
                 itemView.setOnClickListener {

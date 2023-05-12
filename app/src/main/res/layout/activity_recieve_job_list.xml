@@ -56,7 +56,7 @@
                     android:layout_width="15dp"
                     android:layout_height="16dp"
                     android:layout_marginStart="20dp"
-                    android:src="@drawable/location"
+                    android:src="@drawable/resource_private"
                     tools:ignore="DuplicateIds" />
 
 
@@ -83,7 +83,7 @@
                     android:layout_width="15dp"
                     android:layout_height="16dp"
                     android:layout_marginStart="20dp"
-                    android:src="@drawable/resource_private" />
+                    android:src="@drawable/location" />
 
                 <TextView
                     android:id="@+id/age"
@@ -93,7 +93,7 @@
                     android:layout_toEndOf="@id/iconLocation"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="25 years"
+                    android:text="matara"
                     android:textSize="12sp" />
 
 

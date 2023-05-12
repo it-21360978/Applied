@@ -1,12 +1,13 @@
 package com.example.job_portal
 
+import Job
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class SeekerAdapter(private val SekList:ArrayList<Customer>):
+class SeekerAdapter(private val SekList:ArrayList<Job>):
 
     RecyclerView.Adapter<SeekerAdapter.ViewHolder>() {
 
@@ -28,9 +29,9 @@ class SeekerAdapter(private val SekList:ArrayList<Customer>):
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentSek= SekList[position]
-        holder.seeker1.text = currentSek.sfullName
+        holder.seeker1.text = currentSek.fullName
         holder.seekerjob.text = currentSek.jobName
-        holder.age.text = currentSek.smobile
+        holder.age.text = currentSek.address
     }
 
     override fun getItemCount(): Int {

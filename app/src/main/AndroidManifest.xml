@@ -17,6 +17,9 @@
         <activity
 
             android:name=".adminInqView"
+
+            android:name=".jobs_categoryby"
+
             android:exported="false" />
         <activity
             android:name=".launchActivity"

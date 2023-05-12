@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Job_portal"
         tools:targetApi="31">
         <activity
+            android:name=".jobs_categoryby3"
+            android:exported="false" />
+        <activity
+            android:name=".jobs_categoryby2"
+            android:exported="false" />
+        <activity
+            android:name=".jobs_categoryby1"
+            android:exported="false" />
+        <activity
             android:name=".jobs_categoryby"
             android:exported="false" />
         <activity
@@ -31,10 +40,10 @@
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".SignInActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".interview_1"
             android:exported="false" />
@@ -55,13 +64,13 @@
             android:exported="true" />
         <activity
             android:name=".InquiryDetailsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Fetching_Activity"
             android:exported="false" />
         <activity
             android:name=".activity_insertion"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".recieve_job_list"
             android:exported="true" />

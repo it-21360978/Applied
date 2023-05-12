@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".job_add"
-    android:background="@drawable/top_box">
+    android:background="@drawable/bg_view">
 
     <TextView
         android:id="@+id/jobs"
@@ -22,8 +22,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/border"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +37,7 @@
         <EditText
 
             android:id="@+id/companyname"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="56dp"
@@ -51,7 +53,7 @@
         <EditText
 
             android:id="@+id/title"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
@@ -67,7 +69,7 @@
 
         <EditText
             android:id="@+id/category"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
@@ -99,7 +101,7 @@
 
         <EditText
             android:id="@+id/salary"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="16dp"
@@ -115,7 +117,7 @@
 
         <EditText
             android:id="@+id/description"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="6dp"
@@ -131,7 +133,7 @@
 
         <Button
             android:id="@+id/postbutton"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="52dp"
             android:layout_marginTop="12dp"

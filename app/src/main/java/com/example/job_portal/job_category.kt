@@ -28,21 +28,21 @@ class job_category : AppCompatActivity() {
         val school = findViewById<ImageView>(R.id.imageView5)
 
         school.setOnClickListener {
-            val intent = Intent(this,jobs_categoryby::class.java)
+            val intent = Intent(this,jobs_categoryby1::class.java)
             startActivity(intent)
         }
 
         val hotel = findViewById<ImageView>(R.id.imageView6)
 
         hotel.setOnClickListener {
-            val intent = Intent(this,jobs_categoryby::class.java)
+            val intent = Intent(this,jobs_categoryby2::class.java)
             startActivity(intent)
         }
 
         val financial= findViewById<ImageView>(R.id.imageView7)
 
         financial.setOnClickListener {
-            val intent = Intent(this,jobs_categoryby::class.java)
+            val intent = Intent(this,jobs_categoryby3::class.java)
             startActivity(intent)
         }
 

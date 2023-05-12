@@ -47,7 +47,7 @@
         android:layout_height="64dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#7131E3"
+        android:backgroundTint="#B5FEAF"
         android:text="@string/dEdt"
         android:textColor="@color/black"
         android:textSize="18sp"

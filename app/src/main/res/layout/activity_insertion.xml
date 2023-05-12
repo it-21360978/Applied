@@ -17,15 +17,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        app:cardCornerRadius="@dimen/cornerRadius1"
-        app:cardElevation="20dp"
+        android:layout_marginTop="0px"
         android:background="@drawable/custom_edittext"
-       >
+        app:cardCornerRadius="@dimen/cornerRadius1"
+
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="@dimen/layout"
-            android:layout_height="wrap_content"
+            android:layout_height="422dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
             android:background="@drawable/background_box"
             android:orientation="vertical"
             android:padding="@dimen/padding">
@@ -45,7 +49,9 @@
                 android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="40dp"
+                android:layout_marginRight="35px"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
@@ -59,7 +65,9 @@
                 android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="35px"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
@@ -74,7 +82,9 @@
                 android:id="@+id/Msg"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="35px"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_message_24"
                 android:drawablePadding="8dp"
@@ -87,10 +97,12 @@
 
             <Button
                 android:id="@+id/btnSave"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_width="278dp"
+                android:layout_height="160px"
+                android:layout_marginLeft="35px"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="#77E16E"
+                android:layout_marginRight="35px"
+                android:backgroundTint="#B5FEAF"
                 android:text="@string/submitbtn"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -100,57 +112,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="165dp">
-
-        <LinearLayout
-
-            android:layout_width="393dp"
-            android:layout_height="28dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/home" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/box" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintTop_toTopOf="parent"
-                card_view:srcCompat="@drawable/chat" />
-
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                card_view:srcCompat="@drawable/pp" />
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 

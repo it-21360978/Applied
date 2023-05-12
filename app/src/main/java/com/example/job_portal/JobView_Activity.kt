@@ -43,6 +43,7 @@ class JobView_Activity : AppCompatActivity() {
 
     fun getJobData(){
         dbref.addValueEventListener(object : ValueEventListener {
+
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()){

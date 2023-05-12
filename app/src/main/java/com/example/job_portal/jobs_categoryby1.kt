@@ -12,14 +12,15 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class jobs_categoryby : AppCompatActivity() {
+class jobs_categoryby1 : AppCompatActivity() {
 
     private var dbref = FirebaseDatabase.getInstance().getReference("Jobs")
     private lateinit var jobRecyclerView: RecyclerView
     private lateinit var jobArrayList: ArrayList<company>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_jobs_categoryby)
+        setContentView(R.layout.activity_jobs_categoryby1)
 
         jobRecyclerView = findViewById(R.id.rvJob)
         jobRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -33,7 +34,7 @@ class jobs_categoryby : AppCompatActivity() {
     }
 
     private fun getJobData(){
-        dbref.orderByChild("ccategory").equalTo("construction").addValueEventListener(object :
+        dbref.orderByChild("ccategory").equalTo("school leavers").addValueEventListener(object :
             ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
@@ -73,8 +74,6 @@ class jobs_categoryby : AppCompatActivity() {
             val intent = Intent(this, InquiryMainActivity::class.java)
             startActivity(intent)
         }
-
-
 
 
     }

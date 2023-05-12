@@ -11,6 +11,7 @@ class adminDash : AppCompatActivity() {
     private lateinit var btnJ: CardView
     private lateinit var btnInq: CardView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_dash)
@@ -23,8 +24,9 @@ class adminDash : AppCompatActivity() {
 
         btnJ.setOnClickListener{
 
-            val intent = Intent(this,job_category::class.java)
+            val intent = Intent(this,CountActivity::class.java)
             startActivity(intent)
+
         }
 
         btnInq.setOnClickListener{

@@ -29,25 +29,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/companyname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="My Company "
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textSize="24sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvJobCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:text="Post Jobs : 3"
@@ -60,8 +47,7 @@
             android:id="@+id/rvJobCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:text="Recieving Job Application : 2"

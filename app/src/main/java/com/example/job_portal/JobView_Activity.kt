@@ -42,7 +42,7 @@ class JobView_Activity : AppCompatActivity() {
     }
 
     fun getJobData(){
-        dbref.addValueEventListener(object : ValueEventListener {
+        dbref.orderByChild("ccategory").equalTo("it").addValueEventListener(object : ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
 

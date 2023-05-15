@@ -50,7 +50,7 @@ class job_category : AppCompatActivity() {
         val other= findViewById<ImageView>(R.id.imageView8)
 
         other.setOnClickListener {
-            val intent = Intent(this,jobs_categoryby::class.java)
+            val intent = Intent(this,jobs_categoryby4::class.java)
             startActivity(intent)
         }
 

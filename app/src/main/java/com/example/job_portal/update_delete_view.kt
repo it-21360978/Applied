@@ -119,6 +119,10 @@ class update_delete_view : AppCompatActivity() {
             companyname.text = ecompanyname.text.toString()
             title.text = etitle.text.toString()
             category.text = ecategory.text.toString()
+            type.text=etype.text.toString()
+            salary.text=esalary.text.toString()
+            description.text=edescription.text.toString()
+
 
             alertDialog.dismiss()
         }

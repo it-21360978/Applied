@@ -133,7 +133,7 @@
                         android:paddingEnd="20dp"
                         android:paddingBottom="2dp"
                         android:singleLine="true"
-                        android:text="2023.12.05 /22.10"
+                        android:text="2023.05.14 /10.10"
                         android:textSize="10sp" />
                 </RelativeLayout>
             </LinearLayout>

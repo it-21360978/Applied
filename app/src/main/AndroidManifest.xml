@@ -23,10 +23,6 @@
             android:exported="true" />
         <activity
             android:name=".adminInqView"
-
-
-
-
             android:exported="false" />
         <activity
             android:name=".launchActivity"

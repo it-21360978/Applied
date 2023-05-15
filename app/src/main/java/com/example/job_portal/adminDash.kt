@@ -1,5 +1,4 @@
 package com.example.job_portal
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
